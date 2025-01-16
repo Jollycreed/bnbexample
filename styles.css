@@ -1,0 +1,174 @@
+/* General Reset */
+body, h1, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    line-height: 1.6;
+    color: #4A4A4A;
+    background-color: #FAF3E0;
+    padding: 0;
+    margin: 0;
+}
+
+/* Header and Navigation */
+header {
+    background: #D9CAB3;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+nav .logo img {
+    max-height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #4A4A4A;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+}
+
+nav a:hover {
+    background-color: #EAD8C0;
+    color: #704214;
+}
+
+.language-toggle {
+    font-size: 0.9rem;
+    color: #4A4A4A;
+}
+
+/* Main Sections */
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+h1, h2 {
+    color: #704214;
+}
+
+#about {
+    text-align: center;
+    background: #F5E8D9;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+#rooms .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+#rooms .gallery img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Amenities */
+#amenities ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+}
+
+#amenities li {
+    background: #FFF4E3;
+    padding: 1rem;
+    border: 1px solid #EAD8C0;
+    border-radius: 8px;
+    flex: 1 1 calc(50% - 1rem);
+    text-align: center;
+}
+
+/* Location */
+#location {
+    text-align: center;
+}
+
+#map {
+    width: 100%;
+    height: 300px;
+    margin-top: 1rem;
+    border: 1px solid #EAD8C0;
+    border-radius: 8px;
+}
+
+/* Contact Form */
+form {
+    background: #FFF4E3;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #704214;
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #EAD8C0;
+    border-radius: 4px;
+}
+
+form button {
+    background: #D9CAB3;
+    color: #4A4A4A;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+form button:hover {
+    background: #704214;
+    color: #FAF3E0;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #D9CAB3;
+    color: #4A4A4A;
+    margin-top: 2rem;
+}

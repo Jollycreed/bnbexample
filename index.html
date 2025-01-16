@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Epoche B&B</title>
+    <!-- Ensure the 'styles.css' file is located in the same directory as this HTML file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="DALL·E 2025-01-08 16.16.21 - A minimalistic logo design for a B&B called 'Le Rose Canine'. The logo features a stylized rose with soft pink petals and a subtle dog paw integrated .webp" alt="Le Rose Canine Logo">
+            </div>
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#rooms">Rooms</a></li>
+                <li><a href="#amenities">Amenities</a></li>
+                <li><a href="#location">Location</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="language-toggle">
+                <a href="#" id="lang-en" onclick="switchLanguage('en')">EN</a> | <a href="#" id="lang-it" onclick="switchLanguage('it')">IT</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h1>Welcome to Bed & Breakfast</h1>
+            <p>This is an example website and not a real B&B.</p>
+        </section>
+
+        <section id="rooms">
+            <h2>Our Rooms</h2>
+            <div class="gallery">
+                <img src="DALL·E 2025-01-08 16.16.44 - A cozy and elegant B&B bedroom with soft pastel colors, featuring a neatly made bed with fluffy white linens and decorative pillows, a small bedside t.webp" alt="Room 1">
+                <img src="DALL·E 2025-01-08 16.17.04 - A luxurious and modern B&B bedroom with a king-sized bed, crisp white linens, and an accent wall in soft gray tones. The room includes stylish bedside.webp" alt="Room 2">
+                <img src="DALL·E 2025-01-08 16.17.18 - A charming and rustic B&B bedroom with a queen-sized bed, soft beige linens, and wooden beams on the ceiling. The room features a vintage bedside tabl.webp" alt="Room 3">
+            </div>
+        </section>
+
+        <section id="amenities">
+            <h2>Amenities</h2>
+            <ul>
+                <li>Free Wi-Fi</li>
+                <li>Complimentary Breakfast</li>
+                <li>Private Parking</li>
+                <li>Garden and Terrace</li>
+            </ul>
+        </section>
+
+        <section id="location">
+            <h2>Location</h2>
+            <p>
+                <a href="https://maps.app.goo.gl/SBUUJagYnD51B6iVA" target="_blank" rel="noopener noreferrer">
+                    View us on Google Maps
+                </a>
+            </p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2861.1370748905633!2d12.398707012227415!3d44.18376175302504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132cb785a2f15d01%3A0x26fe196346feaf3b!2sB%26B%20Rose%20Canine!5e0!3m2!1sit!2sit!4v1736351228803!5m2!1sit!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form action="/send" method="POST" onsubmit="return validateAndSecureForm();">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Epoche Live Park Experience. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
